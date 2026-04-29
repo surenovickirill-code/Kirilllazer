@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №6</title>
+   
+</head>
+<body>
+
+<header>
+    <h1>Практическая работа №6</h1>
+    <p>Фреймы и ссылки</p>
+</header>
+
+<nav>
+    <a href="#task1">Задание 1</a>
+    <a href="#task2">Задание 2</a>
+    <a href="#task3">Задание 3</a>
+    <a href="#frames">Фреймы</a>
+</nav>
+
+<section id="task1">
+    <h2>Задание 1</h2>
+    <p>Пример двух HTML страниц (условно отображены):</p>
+
+    <div class="files">
+        <div class="file">
+            <h3>Файл 1</h3>
+            <p>Хочешь узнать точное время?</p>
+            <a href="images/WhatsApp Image 2026-04-29 at 08.55.33.jpeg"> Нажми здесь</a>
+            <p id="time"></p>
+        </div>
+         
+            
+        </div>
+    </div>
+</section>
+
+       
+
+<section id="task2">
+    <h2>Задание 2</h2>
+
+    <p>
+        В лесу родилась елочка, <br>
+        В лесу она росла. <br>
+        Зимой и летом стройная, <br>
+        <span class="highlight">Зеленая была.</span>
+    </p>
+
+    <p>
+        <a href="#bottom">Перейти в конец страницы</a>
+    </p>
+
+    <p>
+        На опушке леса жила <br>
+        прекрасная девочка <br>
+        по имени <strong>Дюймовочка</strong>.
+    </p>
+</section>
+
+<section id="task3">
+    <h2>Задание 3</h2>
+
+    <p><strong>Ответьте на вопросы:</strong></p>
+    <ul>
+        <li>Что такое гиперссылка?</li>
+        <li>Какие виды гиперссылок вы знаете?</li>
+    </ul>
+
+    <p><strong>Конспект:</strong></p>
+    <p>
+        Гиперссылка — это элемент HTML, позволяющий переходить между страницами,
+        разделами документа или внешними ресурсами.
+    </p>
+</section>
+
+<section id="frames">
+    <h2>Пример фреймов (через iframe)</h2>
+
+    <p> Левая часть (20%):</p>
+    <iframe srcdoc="<h3 style='text-align:center;'>Верхний фрейм</h3>" height="100"></iframe>
+
+    <p> Правая часть (80%):</p>
+    <iframe srcdoc='
+        <div style="display:flex; height:300px;">
+            <div style="width:20%; background:#ecf0f1; text-align:center;">Меню</div>
+            <div style="width:80%; background:#bdc3c7; text-align:center;">Контент</div>
+        </div>
+    ' height="300"></iframe>
+</section>
+
+
+
+
+
+<script>
+function showTime() {
+    const now = new Date();
+    document.getElementById("time").innerText = now.toLocaleTimeString();
+}
+</script>
+<p><align = center>Задание 2</align> </p>
+<html>
+<head>
+    <title>Практическая работа 7</title>
+</head>
+<body>
+
+    <h2>Задание 1: Текстовая область</h2>
+    <form>
+        <h3>Введи текст</h3>
+        <textarea name="text_area" rows="5" cols="30"> </textarea>
+        <br>
+        <input type="reset" value="очистка">
+    </form>
+
+    <hr> <h2>Задание 2: Раскрывающийся список</h2>
+    <p>Выберите:</p>
+    <select size="1">
+        <option selected value="1">Первый</option>
+        <option value="2">Второй</option>
+        <option value="3">Третий</option>
+        <option value="4">Четвертый</option>
+    </select>
+
+    <hr>
+
+    <h2>Задание 3: Управляющие поля</h2>
+    <form action="URL" method="post">
+        Имя: <input type="text" id="firstname"><br>
+        Фамилия: <input type="text" id="lastname"><br>
+        e-mail: <input type="text" id="email"><br>
+        
+        <input type="radio" name="sex" value="Мужской">Мужской<br>
+        <input type="radio" name="sex" value="Женский">Женский<br>
+        
+        <input type="submit" value="Отправить"> 
+        <input type="reset" value="Сброс">
+    </form>
+
+</body>
+</html>
+</body>
+</html>
